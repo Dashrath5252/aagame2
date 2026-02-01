@@ -77,15 +77,34 @@
         }
         
         body {
-    background: 
+    background:
+        repeating-linear-gradient(
+            135deg,
+            rgba(0,0,0,0.55) 0px,
+            rgba(0,0,0,0.55) 14px,
+            rgba(140,0,0,0.35) 15px,
+            rgba(140,0,0,0.35) 30px
+        ),
         linear-gradient(
             to bottom,
-            rgba(0,0,0,0.8),
-            rgba(255,0,0,0.6)
+            #080000 0%,
+            #1a0000 25%,
+            #3d0000 45%,
+            #5c0000 60%,
+            #7a0000 70%,
+            #7a0000 100%
         ),
-        url("dragon-scale.webp");
-    background-size: cover;
-    background-position: center;
+        linear-gradient(
+            160deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0) 55%
+        ),
+        linear-gradient(
+            -160deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0) 55%
+        );
+    background-blend-mode: multiply;
     background-attachment: fixed;
 }
         
