@@ -90,13 +90,13 @@
         ),
         linear-gradient(
             to bottom,
-            #000000 0%,     /* full black top */
+            #000000 0%,     /* full black */
+            #000000 5%,     /* full black till 5% */
             #0a0000 15%,
             #1a0000 30%,
             #3d0000 45%,
-            #5c0000 60%,
-            #7a0000 70%,
-            #7a0000 100%
+            #5c0000 60%,    /* max red at 60% */
+            #5c0000 100%    /* stay same after */
         );
 
     background-blend-mode: multiply;
