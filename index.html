@@ -76,7 +76,10 @@
             -webkit-tap-highlight-color: transparent;
         }
         
-        body {
+        body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
     background:
         repeating-linear-gradient(
             135deg,
@@ -88,24 +91,15 @@
         linear-gradient(
             to bottom,
             #080000 0%,
-            #1a0000 25%,
-            #3d0000 45%,
-            #5c0000 60%,
+            #1a0000 30%,
+            #3d0000 50%,
+            #5c0000 65%,
             #7a0000 70%,
             #7a0000 100%
-        ),
-        linear-gradient(
-            160deg,
-            rgba(0,0,0,0.6),
-            rgba(0,0,0,0) 55%
-        ),
-        linear-gradient(
-            -160deg,
-            rgba(0,0,0,0.6),
-            rgba(0,0,0,0) 55%
         );
     background-blend-mode: multiply;
-    background-attachment: fixed;
+    z-index: -1;
+    pointer-events: none;
 }
         
         .container {
