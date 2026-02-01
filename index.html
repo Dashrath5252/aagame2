@@ -78,28 +78,21 @@
         
         body {
     background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(0,0,0,0.4) 0px,
-            rgba(0,0,0,0.4) 12px,
-            rgba(255,0,0,0.25) 13px,
-            rgba(255,0,0,0.25) 24px
+        repeating-radial-gradient(
+            circle at center,
+            #1a0000 0px,
+            #1a0000 8px,
+            #4d0000 9px,
+            #4d0000 16px
         ),
         linear-gradient(
-            160deg,
+            to bottom,
             #050000 0%,
-            #2b0000 30%,
-            #7a0000 55%,
-            #ff1a1a 100%
-        ),
-        linear-gradient(
-            -160deg,
-            #050000 0%,
-            #2b0000 30%,
-            #7a0000 55%,
+            #2b0000 40%,
+            #7a0000 70%,
             #ff1a1a 100%
         );
-    background-blend-mode: multiply;
+    background-blend-mode: overlay;
     background-attachment: fixed;
 }
         
